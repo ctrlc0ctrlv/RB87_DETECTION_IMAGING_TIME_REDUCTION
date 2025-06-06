@@ -8,7 +8,7 @@ Single neutral atoms $\left( ^{87}\text{Rb},\ ^{133}\text{Cs},\ ^{87}\text{Sr} \
 
 The project is devoted to methods methods for fast and high-quality determination of the absence/presence of an atom at a known point in an image - “atom detection”. As detection algorithms, we consider a threshold classifier, a Bayesian classifier and a convolutional neural network (CNN).
 
-The main difficulty of the detection - the only experimental data avaliable is the trap array images: <ins>no any labels are avaliable</ins>. To overcome this issue, we utilize the "three-images measurement scheme" [Phuttitarn et al., 2024]. Three consecutive images $\mathcal{I}_{1, 2, 3}$ are obtained using the large-small-large exposure time values. Then, by classifying images $\mathcal{I}_{1, 3}$ and comparing their labels, we can get $\mathcal{I}_2$ labels.
+The main difficulty of the detection - the only experimental data avaliable is the trap array images: <ins>no any labels are avaliable</ins>. To overcome this issue, we utilize the "three-images measurement scheme" [Phuttitarn et al., 2024]. Three consecutive images $I_{1, 2, 3}$ are obtained using the large-small-large exposure time values. Then, by classifying images $I_{1, 3}$ and comparing their labels, we can get $I_2$ labels.
 
 Current repository includes a few Jupyter notebooks with data processing, three detectors training and comparison the results on data test subset.
 
