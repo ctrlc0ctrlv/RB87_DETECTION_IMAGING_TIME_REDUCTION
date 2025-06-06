@@ -1,1 +1,9 @@
-./data/raw/*
+data/raw/
+*.pdf
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.jupyter
+
+# Byte-compiled / optimized / DLL files
+__pycache__/

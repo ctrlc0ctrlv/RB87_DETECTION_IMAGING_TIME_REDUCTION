@@ -1,7 +1,6 @@
 # RB87_DETECTION_IMAGING_TIME_REDUCTION
 
-<!-- <img src="./src/image.png" width="800"/>  -->
-<!-- TODO: fix image -->
+<img src="./data/results/trap_array_marked_traps_en.png" width="700" alt="Trap array image"/>
 
 ## 1. About the project
 
@@ -22,7 +21,7 @@ The raw self-collected dataset (images + trap array positions of the enabled tra
 ### 3.1. If you're planning to use the raw data
 
 1. Download the raw data on the link above
-2. Extract the .zip archive to the `./data` folder. The path to the images should look like this: `/path/to/current/directory/data/raw/rb3.2_2197950934861us_third_14999.png`
+2. Extract the .zip archive contents to the `./data/raw` folder. The path to the images should look like this: `/path/to/current/directory/data/raw/rb3.2_2197950934861us_third_14999.png`
 
 ### 3.2. If the raw data is not needed
 
@@ -30,12 +29,14 @@ The raw self-collected dataset (images + trap array positions of the enabled tra
 
 ### 3.3. Environment setup
 
-Prefer using Conda over than Pip to avoid packages conflicts
+Prefer using `conda` over than `pip` to avoid packages conflicts
 
-<!-- TODO: finish setup section -->
+Run script `setup_test_env_with_jupyter_kernel.sh` to install the conda `test_env` environment with all required dependencies (based on `requirements.txt`). Also this script adds new Jupyter kernel, so that the Jupyter notebook could be executed (tested on both Jupyter Lab and Visual Studio Code).
+
+You can also use `requirements.txt` to install all the packages using `pip`, but good performance is not guaranteed.
 
 ## 3. Acknowledgements
 
 **This work was supported by Non-commercial Foundation for the Advancement of Science and Education INTELLECT.**
 
-Also thanks to https://github.com/Nikita-Belyakov for productive consultations during the work on the project.
+Also thanks to <https://github.com/Nikita-Belyakov> for productive consultations during the work on the project.
