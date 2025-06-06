@@ -30,12 +30,14 @@ The raw self-collected dataset (images + trap array positions of the enabled tra
 
 ### 3.3. Environment setup
 
-Prefer using Conda over than Pip to avoid packages conflicts
+Prefer using `conda` over than `pip` to avoid packages conflicts
 
-<!-- TODO: finish setup section -->
+Run script `setup_test_env_with_jupyter_kernel.sh` to install the conda `test_env` environment with all required dependencies (based on `requirements.txt`). Also this script adds new Jupyter kernel, so that the Jupyter notebook could be executed (tested on both Jupyter Lab and Visual Studio Code).
+
+You can also use `requirements.txt` to install all the packages using `pip`, but good performance is not guaranteed.
 
 ## 3. Acknowledgements
 
 **This work was supported by Non-commercial Foundation for the Advancement of Science and Education INTELLECT.**
 
-Also thanks to https://github.com/Nikita-Belyakov for productive consultations during the work on the project.
+Also thanks to <https://github.com/Nikita-Belyakov> for productive consultations during the work on the project.
