@@ -1,4 +1,5 @@
-./data/raw/*.png
+data/raw/
+*.pdf
 
 # Jupyter Notebook
 .ipynb_checkpoints
