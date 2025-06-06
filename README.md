@@ -1,7 +1,6 @@
 # RB87_DETECTION_IMAGING_TIME_REDUCTION
 
-<!-- <img src="./src/image.png" width="800"/>  -->
-<!-- TODO: fix image -->
+<img src="./data/results/trap_array_marked_traps_en.png" width="700" alt="Trap array image"/>
 
 ## 1. About the project
 
