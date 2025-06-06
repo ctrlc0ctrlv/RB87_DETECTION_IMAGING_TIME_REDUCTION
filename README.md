@@ -22,7 +22,7 @@ The raw self-collected dataset (images + trap array positions of the enabled tra
 ### 3.1. If you're planning to use the raw data
 
 1. Download the raw data on the link above
-2. Extract the .zip archive to the `./data` folder. The path to the images should look like this: `/path/to/current/directory/data/raw/rb3.2_2197950934861us_third_14999.png`
+2. Extract the .zip archive contents to the `./data/raw` folder. The path to the images should look like this: `/path/to/current/directory/data/raw/rb3.2_2197950934861us_third_14999.png`
 
 ### 3.2. If the raw data is not needed
 
