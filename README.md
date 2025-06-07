@@ -31,7 +31,7 @@ The raw self-collected dataset (images + trap array positions of the enabled tra
 
 Prefer using `conda` over than `pip` to avoid packages conflicts
 
-Run script `setup_conda_env_with_jupyter_kernel.sh` to install the conda `rb87_detection_env` environment with all required dependencies (based on `requirements.txt`). Also this script adds new Jupyter kernel, so that the Jupyter notebook could be executed (tested on both Jupyter Lab and Visual Studio Code).
+Run script `setup_conda_env_with_jupyter_kernel.sh` to install the conda `rb87_detection_env` environment with all required dependencies (based on `requirements.txt`). Also this script adds new Jupyter kernel, so that the Jupyter notebook could be executed (tested on both Jupyter Lab and Visual Studio Code). Then restart the shell/VSCode to update Jupyter kernels list.
 
 You can also use `requirements.txt` to install all the packages using `pip`, but good performance is not guaranteed.
 
