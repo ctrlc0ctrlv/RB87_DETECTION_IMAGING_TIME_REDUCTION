@@ -10,9 +10,6 @@ import numpy as np
 from PIL import Image
 from tqdm import tqdm
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
 
 class ImageLoader:
     @staticmethod
@@ -40,6 +37,7 @@ class ImageLoader:
         from_files=True,
         data=None,
         pattern: str = "*.png",
+        log_level: int = logging.WARNING,
     ) -> None:
         self.datapath = Path(datapath)
         self.exposure_time_ms = exposure_time_ms
@@ -57,9 +55,13 @@ class ImageLoader:
         self.remasked_data_second = None
         self.remasked_data_third = None
 
-        logging.basicConfig(level=logging.INFO)
-        logger.info(
-            "Initialized ImageLoader in path: %s", self.datapath.absolute().resolve()
+        self.logger = logging.getLogger(__name__)
+        logging.basicConfig(level=log_level)
+        self.logger.info(
+            "Initialized ImageLoader in path: %s", self.datapath
+        )
+        self.logger.info(
+            f"\tParameters: exposure_time_ms = %s, pattern = %s", exposure_time_ms, pattern
         )
 
         if from_files:
@@ -91,13 +93,13 @@ class ImageLoader:
             ],
             key=lambda x: int(x.replace("us", "").split("_")[1]),
         )
-        logger.info("self.dirfiles size = %s", len(self.dir_files))
+        self.logger.info("self.dirfiles size = %s", len(self.dir_files))
 
         for filename in tqdm(self.dir_files, leave=False):
             path = folder_path / filename
             inp_image = np.asarray(Image.open(path, mode="r")).astype("uint8")
             if inp_image is None:
-                logger.error("Could not open image %s", path)
+                self.logger.error("Could not open image %s", path)
 
             if "first" in filename:
                 first_images.append(inp_image)
