@@ -1,7 +1,8 @@
 # RB87_DETECTION_IMAGING_TIME_REDUCTION
 
 <p float="left">
-  <img src="./data/results/trap_array_marked_traps_en.png" width=50% alt="Trap array image"/>
+  <img src="./data/results/trap_array_marked_traps_en.png" width=49% alt="Trap array image"/>
+  <img src="./data/results/comparison_en.png" width=50% alt="Results comparison"/>
   <img src="./data/results/sample_labeled_trap_45.png" width=100% alt="Trap 45 labeled samples"/> 
 </p>
 
