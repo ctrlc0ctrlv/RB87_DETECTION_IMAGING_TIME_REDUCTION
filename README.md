@@ -3,7 +3,7 @@
 <p float="left">
   <img src="./data/results/trap_array_marked_traps_en.png" width=49% alt="Trap array image"/>
   <img src="./data/results/comparison_en.png" width=50% alt="Results comparison"/>
-  <img src="./data/results/sample_labeled_trap_45.png" width=100% alt="Trap 45 labeled samples"/> 
+  <img src="./data/results/sample_labeled_trap_45.png" width=100% alt="Trap 45 labeled samples"/>
 </p>
 
 ## 1. About the project
@@ -33,11 +33,25 @@ The raw self-collected dataset (images + trap array positions of the enabled tra
 
 ### 3.3. Environment setup
 
-Prefer using `conda` over than `pip` to avoid packages conflicts
+Python main version: `3.11.0`.
 
-Run script `setup_conda_env_with_jupyter_kernel.sh` to install the conda `rb87_detection_env` environment with all required dependencies (based on `requirements.txt`). Also this script adds new Jupyter kernel, so that the Jupyter notebook could be executed (tested on both Jupyter Lab and Visual Studio Code). Then restart the shell/VSCode to update Jupyter kernels list.
+Prefer using `conda` over than `pip` to avoid packages conflicts.
 
-You can also use `requirements.txt` to install all the packages using `pip`, but good performance is not guaranteed.
+Run script
+
+```bash
+./setup_conda_env_with_jupyter_kernel.sh
+```
+
+to install the conda `rb87_detection_env` environment with all required dependencies (based on `requirements.txt`). Also this script adds new Jupyter kernel with the same name, so that the Jupyter notebook could be executed (tested on both Jupyter Lab and Visual Studio Code). After setup, restart the shell/VSCode to update Jupyter kernels list.
+
+You can also use `requirements.txt` to install all the packages using `pip`:
+
+```bash
+pip install -r ./requirements.txt
+```
+
+but good performance is not guaranteed.
 
 ## 3. Acknowledgements
 
